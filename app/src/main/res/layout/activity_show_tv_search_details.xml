@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/first"
+    tools:context=".Activity.ShowTvSearchDetails">
+
+    <include
+        android:id="@+id/toolbar_search_details"
+        layout="@layout/toolbar"></include>
+
+    <LinearLayout
+
+        android:id="@+id/details_webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:background="#6170e6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="#060606"
+                    android:id="@+id/search_showName"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="ShowName"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="left"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingRight="40dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/original_Country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="right"
+                    android:text="language"
+                    android:textSize="22dp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollview">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+
+                android:layout_marginTop="60dp"
+                app:cardBackgroundColor="#d3ed52"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="17dp"
+
+                >
+
+                <LinearLayout
+                    android:alpha=".6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/cadrback1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:textColor="#f3f3f7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:paddingRight="20dp"
+                            android:text="First Air Date  : "
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:textColor="#f3f3f7"
+
+                            android:id="@+id/first_air_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="2.5.18"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:textColor="#f3f3f7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:paddingRight="20dp"
+                            android:text="End Air Date    : "
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:textColor="#f3f3f7"
+                            android:id="@+id/last_air_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="2.4.17"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <LinearLayout
+
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="17dp"
+                    app:cardBackgroundColor="#9c9b9a"
+                    >
+
+                    <LinearLayout
+                        android:alpha=".6"
+                        android:background="@drawable/cardback"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:textColor="#f3f3f7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
+                                android:paddingRight="20dp"
+                                android:text="Episode Run Time : "
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:textColor="#f3f3f7"
+                                android:id="@+id/episode_run_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
+                                android:text="2.5.18"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="7dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:textColor="#f3f3f7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:paddingRight="18dp"
+                                android:text="Number Of Episode : "
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:textColor="#f3f3f7"
+                                android:id="@+id/number_of_episode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:paddingRight="10dp"
+                                android:text="2.5.18"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:textColor="@color/white"
+                    android:textStyle="italic"
+                    android:background="@drawable/rippleeffect2"
+                    android:textSize="20dp"
+                    android:onClick="SeasonsDetails"
+                    android:id="@+id/number_of_season"
+                    android:text="Season"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#c66a6a"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="Network"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:id="@+id/textView"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:text="value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <ImageView
+
+                    android:paddingTop="10dp"
+                    android:id="@+id/networkImage"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
