@@ -1,4 +1,13 @@
-# TVShow
+#   TvShowes
+       User can get  Information  about a  tv series  . when a series will be  release
+       
+# Using  
+
+  ###  Java, AndroidStudio
+  ###  REST API
+
+
+# 
 
 <img src="images/Screenshot_2019-10-12-16-46-04-090_com.mehedi.user.tvshow.png" width="250dp" hight="500dp">         <img 
 src="images/Screenshot_2019-10-12-16-48-04-556_com.miui.video.png" width="250dp" hight="500dp">
